@@ -1,0 +1,149 @@
+:root {
+  --bg: #0f0f1a;
+  --primary: #00ffe0;
+  --text: #ffffff;
+  --card-bg: #1a1a2e;
+  --highlight: #a0f;
+  --secondary: #2d1369;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, var(--bg), var(--card-bg), var(--secondary));
+  color: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50rem;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: radial-gradient(circle at center, var(--secondary), var(--card-bg), var(--bg));
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+  justify-content: space-between;
+}
+
+.back-btn {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+    background: var(--primary);
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-left: 10px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    color: var(--primary);
+    background-color: var(--card-bg);
+}
+
+.body {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  max-width: 700px;
+  padding: 30px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  text-align: center;
+}
+
+
+h1 {
+  font-size: 2.5em;
+  background: linear-gradient(90deg, var(--primary), var(--highlight));
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.judul {
+  font-size: 1.5em;
+  background: linear-gradient(90deg, var(--primary), var(--highlight));
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+  width: auto;
+}
+
+h2{
+    font-size: 1.5em;
+    color: var(--text);
+    text-decoration: none;
+    background-color: var(--card-bg);
+    width: 100px;
+    height: auto;
+    border-radius: 5%;
+}
+
+.flyer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem auto;
+    max-width: 600px;
+    background: var(--card-bg);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    padding: 2rem;
+}
+
+.flyer-img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.flyer-img:hover {
+    background-color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0, 255, 224, 0.3);
+}
+
+.flyer-desc {
+    text-align: center;
+}
+
+.action-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.75rem 1.5rem;
+    background: var(--primary);
+    color: var(--text);
+    border: none;
+    border-radius: 5%;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.action-btn:hover {
+    background-color: var(--card-bg);
+    color: var(--primary);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 25px rgba(0, 255, 224, 0.3);
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: radial-gradient(circle at center, var(--secondary), var(--card-bg), var(--bg));
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  text-align: center;
+}

@@ -1,0 +1,150 @@
+:root {
+  --bg: #0f0f1a;
+  --primary: #00ffe0;
+  --text: #ffffff;
+  --card-bg: #1a1a2e;
+  --highlight: #a0f;
+  --secondary: #2d1369;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, var(--bg), var(--card-bg), var(--secondary));
+  color: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: radial-gradient(circle at center, var(--secondary), var(--card-bg), var(--bg));
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  display: flex;
+  text-align: center;
+  gap: 20px;
+}
+
+
+
+.body {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  max-width: 700px;
+  padding: 30px;
+  box-shadow: 0 0 25px rgba(0, 255, 255, 0.3);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.flyer:hover {
+  transform: translateY(-10px);
+}
+
+
+h1 {
+  font-size: 2.5em;
+  background: linear-gradient(90deg, var(--primary), var(--highlight));
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+.back-btn {
+    color: var(--text);
+    text-decoration: none;
+    font-weight: bold;
+    background: var(--primary);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    gap: 10px;
+    height: auto;
+    border-radius: 4px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.back-btn:hover {
+    color: var(--primary);
+    background-color: var(--card-bg);
+}
+
+.data{
+    width: 12rem;
+}
+
+.data input[type="text"], .data input[type="password"] {
+    width: 100%;
+    padding: 0.6rem 1rem;
+    border-radius: 8px;
+    border: 1.5px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    background: #f7f7fa;
+    transition: border 0.2s, box-shadow 0.2s;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.data input[type="text"]:focus, .data input[type="password"]:focus {
+    border: 1px solid var(--bg);
+    outline: none;
+    box-shadow: 0 0 0 5px #b3e6ff;
+}
+
+
+.body h1{
+    margin-bottom: 2rem;
+}
+
+.username{
+    border-radius: 5%;
+    width: 10rem;
+    margin-bottom: 10px;
+}
+
+.password{
+    border-radius: 5%;
+    width: 10rem;
+}
+
+.body button{
+    background: var(--primary);
+    color: var(--text);
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+.body button:hover{
+    background-color: var(--card-bg);
+    color: var(--primary);
+}
+
+a{
+    text-decoration: none;
+    color: #00e5ff;
+}
+
+a p {
+  font-size: 1.1em;
+  color: #b2ebf2;
+  cursor: default;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: radial-gradient(circle at center, var(--secondary), var(--card-bg), var(--bg));
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  text-align: center;
+}

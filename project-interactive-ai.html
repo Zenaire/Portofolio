@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project | Software Developer</title>
+  <link rel="stylesheet" href="project.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <header class="hero">
+    <div class="container">
+      <h1><span class="highlight">Zenaire AM</span></h1>
+      <p class="subtitle">Project : Simple Interactive AI</p>
+    </div>
+    <div class="section-list">
+        <a href="home.html">Back to Home</a>
+    </div>
+  </header>
+  <section id="penjelasan">
+    <div class="section">
+      <p>Reika AI adalah chatbot berbasis API yang saya kembangkan menggunakan Python, dengan kemampuan mempertahankan kepribadian unik dalam percakapan. Tidak seperti chatbot generik, Reika AI dirancang memiliki gaya bicara yang flamboyan, ekspresif, dan teatrikal, seperti seorang karakter fiksi yang hidup.</p>
+      <h2>🧠 Fitur Utama:</h2>
+      <p>Kepribadian Karakter Kuat:</p>
+      <p>Dibekali prompt sistem yang dirancang khusus, Reika memiliki karakter flamboyan, percaya diri, dan dramatis. Dalam setiap interaksinya, Reika merespons seolah sedang tampil di atas panggung.</p>
+      <p>Ingatan Percakapan:</p>
+      <p>Menggunakan file messages.json untuk menyimpan riwayat percakapan, memungkinkan Reika mempertahankan konteks obrolan dari satu input ke input berikutnya.</p>
+      <p>Reset Memori:</p> 
+      <p>Terdapat perintah khusus (reset) untuk menghapus riwayat dan mengembalikan ke kondisi awal, cocok untuk simulasi kepribadian baru.</p>
+      <p>Logging Jawaban AI:</p>
+      <p>Semua interaksi tersimpan ke dalam file log harian (riwayat_chat.txt dan jawaban_ai.txt) untuk dokumentasi dan analisis.</p>
+      <p>Efek Ketikan Dramatis:</p>
+      <p>Output ditampilkan huruf per huruf dengan jeda pendek untuk menciptakan kesan "karakter sedang berbicara" secara langsung — mendukung nuansa teatrikal Reika.</p>
+      <h2>🔧 Teknologi yang Digunakan:</h2> 
+      <ul>
+        <li><p>Python 3</p></li>
+        <li><p>API dari OpenRouter (Model: LLaMA 3 8B Instruct)</p></li>
+        <li><p>Library: requests, datetime, json, os, threading, tkinter</p></li>
+        <li><p>File I/O untuk sistem log dan memori percakapan</p></li>
+      </ul>
+      <h2>🎯 Tujuan Proyek:</h2> 
+      <p>Proyek ini saya buat untuk mengeksplorasi pembuatan AI berbasis karakter dengan kepribadian kuat dan roleplay mendalam. Tujuannya bukan hanya untuk menjawab pertanyaan, tapi juga membangun pengalaman komunikasi emosional dan ekspresif antara manusia dan AI.</p>
+      <h2>🛠️ Rencana Pengembangan ke Depan:</h2> 
+      <ul>
+        <li><p>Integrasi TTS (Text-to-Speech) untuk menjadikan suara Reika hidup</p></li>
+        <li><p>Implementasi GUI menggunakan Tkinter untuk tampilan visual yang lebih menarik</p></li>
+        <li><p>Penambahan filter emosi atau reaksi otomatis terhadap perintah atau kondisi tertentu</p></li>
+        <li><p>Sistem login agar riwayat pengguna bisa disesuaikan per identitas</p></li>
+      </ul> 
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 [Zenaire]</p>
+  </footer>
+</body>
+</html>

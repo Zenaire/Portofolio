@@ -1,0 +1,108 @@
+:root {
+  --bg: #0f0f1a;
+  --primary: #00ffe0;
+  --text: #ffffff;
+  --card-bg: #1a1a2e;
+  --highlight: #a0f;
+}
+
+html{
+  scroll-behavior: smooth;
+} 
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+.container {
+  text-align: center;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1a1a2e, #16213e);
+  padding: 5px 2px;
+  box-shadow: var(--highlight) 0px 0px 25px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.section-list a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--highlight);
+  transition: width 0.3s ease;
+}
+.section-list a:hover::after {
+  width: 100%;
+}
+
+.section-list{
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+
+
+.section-list a{
+  text-align: center;
+  color: var(--card-bg);
+  background-color: var(--primary);
+  border-radius: 15%;
+  padding-left: 5px;
+  padding-right: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.section-list a:hover{
+  color: var(--primary);
+  background-color: var(--card-bg);
+}
+
+.highlight {
+  color: var(--highlight);
+}
+
+.konten-utama{
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+.section {
+  padding: 4rem 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h2 {
+  color: var(--primary);
+  margin-bottom: 1rem;
+  border-bottom: 2px solid var(--primary);
+  display: inline-block;
+  padding-bottom: 0.5rem;
+}
+
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #0d0d17;
+  color: #aaa;
+  font-size: 0.9rem;
+}

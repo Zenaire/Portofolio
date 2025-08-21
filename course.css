@@ -1,0 +1,84 @@
+:root {
+  --bg: #0f0f1a;
+  --primary: #00ffe0;
+  --text: #ffffff;
+  --card-bg: #1a1a2e;
+  --highlight: #a0f;
+  --secondary: #2d1369;
+}
+
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle at center, var(--bg), var(--card-bg), var(--secondary));
+  color: #e0f7fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50rem;
+}
+
+/*body:hover {
+  background: #fff !important;
+}
+
+body:hover * {
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+*/
+
+.flyer {
+  background: var(--card-bg);
+  border: 1px solid var(--highlight);
+  border-radius: 20px;
+  max-width: 700px;
+  padding: 30px;
+  box-shadow: 0 0 25px var(--highlight);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.flyer:hover {
+  transform: translateY(-10px);
+}
+
+
+h1 {
+  font-size: 2.5em;
+  background: linear-gradient(90deg, var(--primary), var(--highlight));
+  color: transparent;
+  background-clip: text;
+  margin-bottom: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: #00e5ff;
+}
+
+a p {
+  font-size: 1.1em;
+  color: #b2ebf2;
+  cursor: default;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #0f2027;
+  background: linear-gradient(90deg, var(--primary), var(--highlight));
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+}
