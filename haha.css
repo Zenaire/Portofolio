@@ -1,8 +1,0 @@
-body{
-    background: radial-gradient(circle at center, #0f2027, #203a43, #2c5364);
-    color: #e0f7fa;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 50rem;
-}
